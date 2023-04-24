@@ -73,21 +73,13 @@ router.beforeEach((to, from, next) => {
   return next();
  }
  const token=window.sessionStorage.getItem('token');
- //管理员页面守卫
- if(to.path.includes('ma')){
-  if(token.includes('manager')){
-    return next();
-  }else{
-    return next('/login');
-  }
- }else{
+
   //普通用户路由守卫
   if(!token){
     return next('/login');
   }else{
     return next();
   }
- }
  
 })
 

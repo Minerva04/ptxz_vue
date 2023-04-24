@@ -86,10 +86,10 @@ export default {
         return {
             form: {
                 code: "",
-                email: "2109509183@qq.com",
+                email: "",
             },
             passwordform: {
-                email: '2109509183@qq.com',
+                email: '',
                 password: '',
             },
             registerForm: {
@@ -147,7 +147,7 @@ export default {
             time2: 59,
             buttMsg2: '发送验证码',
             buttMsg: '发送验证码',
-            activeName: 'register'
+            activeName: 'email'
         };
 
     },
